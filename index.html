@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Meta tag essencial para o design responsivo funcionar corretamente -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburgueria do Campo</title>
+
+    <!-- CSS Mobile (aplicado em ecrãs até 768px de largura) -->
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 768px)">
+
+    <!-- CSS Desktop (aplicado em ecrãs com 769px ou mais de largura) -->
+    <link rel="stylesheet" href="desktop.css" media="screen and (min-width: 769px)">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <!-- Podes substituir por uma tag <img> com o logótipo -->
+            <h1>Hamburgueria do Campo</h1>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#lojas">Lojas</a></li>
+                <li><a href="#reservas">Reservas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section: A primeira imagem grande que o utilizador vê -->
+        <section class="hero">
+            <div class="hero-content">
+                <h2>O Verdadeiro Sabor Artesanal</h2>
+                <p>Ingredientes frescos, confecionados com paixão.</p>
+                <a href="#menu" class="btn-primary">Ver Menu</a>
+            </div>
+        </section>
+
+        <!-- Secção de Categorias de Menu (Estilo Hamburgueria do Bairro) -->
+        <section id="menu" class="menu-categorias">
+            <div class="categoria-card">
+                <h3>Hambúrgueres</h3>
+                <p>100% Carne de Novilho</p>
+            </div>
+            <div class="categoria-card">
+                <h3>Vegan</h3>
+                <p>Sabor sem compromisso</p>
+            </div>
+            <div class="categoria-card">
+                <h3>Sobremesas</h3>
+                <p>Para adoçar o final</p>
+            </div>
+        </section>
+
+        <!-- Secção das Lojas onde o JavaScript vai injetar os dados -->
+        <section id="lojas" class="lojas-section">
+            <h2>Visita o nosso Campo!</h2>
+            <!-- Este contentor recebe os cards criados dinamicamente no JS -->
+            <div id="lojas-container" class="lojas-grid"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Hamburgueria do Campo. Todos os direitos reservados.</p>
+        <div class="sociais">
+            <a href="https://www.instagram.com/hamburgueria.docampo/">Instagram</a>
+        </div>
+    </footer>
+
+    <!-- Script para carregar o JSON das lojas -->
+    <script src="lojas.js"></script>
+</body>
+
+</html>
