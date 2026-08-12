@@ -7,11 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hamburgueria do Campo</title>
 
+    <!-- Favicon / Logótipo no separador do navegador -->
+    <link rel="icon" type="image/jpeg" href="logo.jpg">
+
     <!-- CSS Mobile (aplicado em ecrãs até 768px de largura) -->
     <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 768px)">
 
     <!-- CSS Desktop (aplicado em ecrãs com 769px ou mais de largura) -->
     <link rel="stylesheet" href="desktop.css" media="screen and (min-width: 769px)">
+
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Fredoka+One&family=Titan+One&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -19,7 +25,7 @@
     <header class="navbar">
         <div class="logo">
             <!-- Podes substituir por uma tag <img> com o logótipo -->
-            <h1>Hamburgueria do Campo</h1>
+            <h1><a href="#hero">Hamburgueria do Campo</a></h1>
         </div>
         <nav>
             <ul class="nav-links">
@@ -32,7 +38,7 @@
 
     <main>
         <!-- Hero Section: A primeira imagem grande que o utilizador vê -->
-        <section class="hero">
+        <section id="hero" class="hero">
             <div class="hero-content">
                 <h2>O Verdadeiro Sabor Artesanal</h2>
                 <p>Ingredientes frescos, confecionados com paixão.</p>
