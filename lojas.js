@@ -65,4 +65,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
         containerLojas.appendChild(lojaCard);
     });
+    // --- CÓDIGO DO SLIDER DA HERO SECTION ---
+    const slides = document.querySelectorAll('.hero-bg');
+    let currentSlide = 0;
+
+    if (slides.length > 0) {
+        setInterval(() => {
+            // Remove a classe 'active' da imagem atual (esconde)
+            slides[currentSlide].classList.remove('active');
+
+            // Passa para a próxima imagem. 
+            // O operador '%' garante que se chegar ao fim, volta ao zero.
+            currentSlide = (currentSlide + 1) % slides.length;
+
+            // Adiciona a classe 'active' à nova imagem (mostra)
+            slides[currentSlide].classList.add('active');
+        }, 5000); // 5000 ms = 5 segundos
+    }
 });

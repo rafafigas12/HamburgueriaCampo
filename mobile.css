@@ -15,54 +15,152 @@ body {
     background-color: #fafafa;
 }
 
-/* Header empilhado */
+/* --- BARRA DE NAVEGAÇÃO SOBREPOSTA --- */
 .navbar {
-    position: sticky;
+    position: absolute;
+    /* Tira a navbar do fluxo normal, permitindo que a imagem fique por baixo */
     top: 0;
-    z-index: 1000;
+    left: 0;
+    width: 100%;
+    /* Garante que ocupa a largura toda do ecrã */
+    z-index: 10;
+    /* Coloca a navbar numa camada acima da hero section (que deve ter z-index mais baixo) */
+
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    padding: 15px;
-    background-color: #fff;
-    color: #111;
-    text-align: center;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px 25px;
+
+    /* Fundo semi-transparente esbranquiçado, tal como na imagem */
+    background-color: rgba(255, 255, 255, 0.7);
 }
 
-.logo img {
-    max-height: 60px;
-    max-width: 180px;
-    width: auto;
-    height: auto;
-    object-fit: contain;
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+/* O texto do logótipo/título passa a escuro para contrastar com o fundo claro */
+.navbar h1 {
+    color: #333;
+    font-size: 18px;
+    margin: 0;
 }
 
 .nav-links {
     list-style: none;
-    margin-top: 15px;
     display: flex;
-    gap: 15px;
+    align-items: center;
+    gap: 20px;
 }
 
+/* Os links também passam a escuros */
 .nav-links a {
-    color: #111;
+    color: #333;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 15px;
+    font-weight: bold;
+    /* Podes adicionar negrito para se ler melhor */
     text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #777;
+    /* Uma cor ligeiramente diferente ao passar o rato */
+}
+
+/* Ícones Sociais alinhados à direita com tamanho aumentado */
+.social-links {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left: auto;
+}
+
+.social-links a {
+    color: #333;
+    font-size: 22px;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.2s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-links a:hover {
+    color: #e6b800;
+    transform: scale(1.2);
 }
 
 /* Hero Section */
+/* --- HERO SECTION SLIDER --- */
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('salada_fundo.jpeg') center/cover no-repeat;
-    color: #fff;
-    padding: 60px 20px;
+    position: relative;
+    /* Podes ajustar o padding conforme seja mobile ou desktop */
+    padding: 100px 20px;
     text-align: center;
+    color: #fff;
+    /* O texto passa a ser branco para contrastar */
+    overflow: hidden;
+    min-height: 100vh;
+    /* Garante uma altura mínima */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.hero h2 {
-    font-size: 28px;
-    margin-bottom: 10px;
+/* As divs com as imagens de fundo */
+.hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    /* Começam invisíveis */
+    transition: opacity 1s ease-in-out;
+    /* Efeito de fade suave de 1 segundo */
+    z-index: 1;
+}
+
+/* Apenas a imagem ativa fica visível */
+.hero-bg.active {
+    opacity: 1;
+}
+
+/* Sobreposição escura para o texto ser sempre legível */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    /* Preto com 60% de opacidade */
+    z-index: 2;
+}
+
+/* O texto tem de ficar acima da sobreposição */
+.hero-content {
+    position: relative;
+    z-index: 3;
+}
+
+/* Ajustes no botão para combinar com o fundo escuro */
+.hero .btn-primary {
+    background-color: #ffcc00;
+    /* Botão amarelo */
+    color: #111;
+    /* Texto do botão escuro */
+}
+
+.hero .btn-primary:hover {
+    background-color: #fff;
 }
 
 .btn-primary {
@@ -109,9 +207,9 @@ body {
 /* Testar com a Chewy */
 .logo h1 {
     font-family: 'Chewy', cursive;
-    font-size: 36px;
+    font-size: 18px;
     letter-spacing: 1px;
-    color: #111;
+    color: #333;
 }
 
 .logo h1 a {

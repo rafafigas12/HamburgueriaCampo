@@ -8,7 +8,7 @@
     <title>Hamburgueria do Campo</title>
 
     <!-- Favicon / Logótipo no separador do navegador -->
-    <link rel="icon" type="image/jpeg" href="logo.jpg">
+    <link rel="icon" type="image/jpeg" href="fotos/logo.jpg">
 
     <!-- CSS Mobile (aplicado em ecrãs até 768px de largura) -->
     <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 768px)">
@@ -18,6 +18,8 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Fredoka+One&family=Titan+One&display=swap"
         rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
@@ -34,16 +36,32 @@
                 <li><a href="#reservas">Reservas</a></li>
             </ul>
         </nav>
+        <div class="social-links">
+            <!-- O link aponta diretamente para o Instagram do teu cliente -->
+            <a href="https://www.instagram.com/hamburgueria.docampo/" target="_blank" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <!-- Podes adicionar o Facebook ou outros da mesma forma -->
+            <a href="https://www.facebook.com/Portela.de.Sintra2022/?locale=pt_PT" target="_blank"
+                aria-label="Facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+        </div>
     </header>
 
     <main>
         <!-- Hero Section: A primeira imagem grande que o utilizador vê -->
         <section id="hero" class="hero">
-            <div class="hero-content">
+            <!-- Imagens de Fundo -->
+            <div class="hero-bg slide active" style="background-image: url('fotos/6pratos_fundo.jpeg');"></div>
+            <div class="hero-bg slide" style="background-image: url('fotos/interior_sintra.jpg');"></div>
+            <div class="hero-bg slide" style="background-image: url('fotos/salada_fundo.jpeg');"></div>
+
+            <!--<div class="hero-content">
                 <h2>O Verdadeiro Sabor Artesanal</h2>
                 <p>Ingredientes frescos, confecionados com paixão.</p>
                 <a href="#menu" class="btn-primary">Ver Menu</a>
-            </div>
+            </div> -->
         </section>
 
         <!-- Secção de Categorias de Menu (Estilo Hamburgueria do Bairro) -->
