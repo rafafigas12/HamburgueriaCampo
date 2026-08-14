@@ -18,27 +18,29 @@ body {
 /* --- BARRA DE NAVEGAÇÃO SOBREPOSTA --- */
 .navbar {
     position: absolute;
-    /* Tira a navbar do fluxo normal, permitindo que a imagem fique por baixo */
     top: 0;
     left: 0;
     width: 100%;
-    /* Garante que ocupa a largura toda do ecrã */
     z-index: 10;
-    /* Coloca a navbar numa camada acima da hero section (que deve ter z-index mais baixo) */
 
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 25px;
 
-    /* Fundo semi-transparente esbranquiçado, tal como na imagem */
     background-color: rgba(255, 255, 255, 0.7);
 }
 
 .logo {
     display: flex;
     align-items: center;
-    margin-right: 20px;
+}
+
+/* Centralizar o menu no meio da navbar */
+.navbar nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 /* O texto do logótipo/título passa a escuro para contrastar com o fundo claro */
@@ -52,7 +54,7 @@ body {
     list-style: none;
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
 }
 
 /* Os links também passam a escuros */
@@ -71,7 +73,7 @@ body {
     /* Uma cor ligeiramente diferente ao passar o rato */
 }
 
-/* Ícones Sociais alinhados à direita com tamanho aumentado */
+/* Ícones Sociais alinhados à direita */
 .social-links {
     display: flex;
     align-items: center;
