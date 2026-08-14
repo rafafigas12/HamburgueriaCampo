@@ -17,18 +17,20 @@ body {
 
 /* --- BARRA DE NAVEGAÇÃO SOBREPOSTA --- */
 .navbar {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 10;
+    z-index: 1000;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 25px;
+    padding: 15px 35px;
 
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.55);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 .logo {
@@ -57,20 +59,42 @@ body {
     gap: 15px;
 }
 
-/* Os links também passam a escuros */
+/* 1. Prepara o link para receber a animação */
 .nav-links a {
     color: #333;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: bold;
-    /* Podes adicionar negrito para se ler melhor */
     text-transform: uppercase;
+    position: relative;
+    /* Essencial para a linha saber onde se posicionar */
     transition: color 0.3s;
 }
 
+/* 2. Cria a linha invisível (largura 0) posicionada debaixo do texto */
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    /* Espessura da linha */
+    bottom: -5px;
+    /* Distância da linha em relação ao texto */
+    left: 0;
+    background-color: #e6b800;
+    /* Cor da linha (podes mudar para o amarelo #ffcc00 se preferires) */
+    transition: width 0.3s ease;
+    /* Faz a linha crescer suavemente durante 0.3 segundos */
+}
+
+/* 3. Quando o rato passa, a linha cresce para 100% da largura da palavra */
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+/* Opcional: mudar ligeiramente a cor do texto ao passar o rato */
 .nav-links a:hover {
-    color: #777;
-    /* Uma cor ligeiramente diferente ao passar o rato */
+    color: #000;
 }
 
 /* Ícones Sociais alinhados à direita */
