@@ -224,12 +224,52 @@ body {
 
 .categoria-card {
     background-color: #fff;
-    padding: 50px 20px;
     text-align: center;
     border: 1px solid #eee;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s;
+
+    /* NOVAS REGRAS */
+    overflow: hidden;
+    /* Fundamental: impede que as pontas quadradas da imagem saiam fora dos cantos arredondados do cartão */
+    display: flex;
+    flex-direction: column;
+    /* Garante que a imagem fica em cima e o texto em baixo */
+}
+
+/* Regras para a nova imagem */
+.loja-img {
+    width: 100%;
+    height: 220px;
+    /* Podes ajustar a altura como preferires */
+    object-fit: cover;
+    /* Faz com que a foto preencha o espaço sem ser achatada ou esticada */
+}
+
+/* Regras para a área do texto */
+.loja-info {
+    padding: 30px 20px;
+    /* Movemos o padding que estava no cartão principal para aqui */
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    /* Faz a área de texto esticar para que os botões fiquem todos alinhados no fundo */
+}
+
+.loja-info h3 {
+    margin-bottom: 15px;
+}
+
+.loja-info p {
+    margin-bottom: 12px;
+    line-height: 1.4;
+    font-size: 14px;
+}
+
+.loja-info .btn-primary {
+    margin-top: auto;
+    /* Empurra sempre o botão para a base do cartão */
 }
 
 .categoria-card:hover {
@@ -268,6 +308,71 @@ body {
 h2,
 h3 {
     font-family: 'Fredoka One', cursive;
+}
+
+/* --- ESTILOS DO MODAL (POP-UP) --- */
+
+/* O fundo escuro que cobre o ecrã */
+.modal {
+    display: none;
+    /* Escondido por defeito */
+    position: fixed;
+    z-index: 1000;
+    /* Garante que fica por cima de navbars e hero sections */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    align-items: center;
+    /* Centra a caixa verticalmente */
+    justify-content: center;
+    /* Centra a caixa horizontalmente */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Quando adicionamos a classe 'mostrar' via JavaScript */
+.modal.mostrar {
+    display: flex;
+    opacity: 1;
+}
+
+/* A caixa branca com a informação */
+.modal-content {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    max-width: 500px;
+    width: 90%;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    /* Um pequeno efeito da caixa a deslizar de cima para baixo */
+    transform: translateY(-20px);
+    transition: transform 0.3s ease;
+}
+
+.modal.mostrar .modal-content {
+    transform: translateY(0);
+}
+
+/* O botão X para fechar */
+.fechar-modal {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #999;
+    cursor: pointer;
+    line-height: 1;
+    transition: color 0.3s;
+}
+
+.fechar-modal:hover {
+    color: #111;
+    /* Ou podes usar o amarelo da marca #E5A93B */
 }
 
 footer {
