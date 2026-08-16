@@ -143,6 +143,11 @@ body {
     justify-content: center;
 }
 
+.hero.hero-lojas {
+    min-height: 80vh;
+    padding-top: 100px;
+}
+
 /* As divs com as imagens de fundo */
 .hero-bg {
     position: absolute;
@@ -181,6 +186,36 @@ body {
 .hero-content {
     position: relative;
     z-index: 3;
+}
+
+/* --- ESTILO DO TÍTULO E SUBTÍTULO SOBRE IMAGENS (HERO CONTENT) --- */
+
+.hero-content {
+    text-align: center;
+    color: #fff;
+    /* Garante que o texto é branco para contrastar com a foto */
+    position: relative;
+    z-index: 3;
+    /* Se precisares de afastar o texto do topo (por causa da navbar), podes usar: */
+    /* padding-top: 80px; */
+}
+
+.hero-content h2 {
+    font-family: 'Chewy', cursive;
+    font-size: 80px;
+    /* Escala gigante para dar impacto */
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    /* Sombra escura e difusa para o texto não se perder no fundo */
+    text-shadow: 3px 5px 10px rgba(0, 0, 0, 0.7);
+}
+
+.hero-content p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    /* Subtítulo bem legível */
+    font-weight: 500;
+    text-shadow: 2px 3px 6px rgba(0, 0, 0, 0.7);
 }
 
 /* Ajustes no botão para combinar com o fundo escuro */
@@ -373,6 +408,79 @@ h3 {
 .fechar-modal:hover {
     color: #111;
     /* Ou podes usar o amarelo da marca #E5A93B */
+}
+
+/* --- ESTILOS DO CONTEÚDO DO MODAL --- */
+
+/* Título com uma linha separadora por baixo */
+.modal-titulo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    color: #1A1A1A;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Contentor dos detalhes alinhado à esquerda para leitura mais rápida */
+.modal-detalhes {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* Espaço entre morada, telefone e horário */
+    margin-bottom: 30px;
+}
+
+/* Alinhamento perfeito entre o ícone e o texto */
+.detalhe-item {
+    display: flex;
+    align-items: center;
+    /* Centra o ícone verticalmente em relação ao texto */
+    gap: 15px;
+}
+
+/* Estilo dos ícones */
+.detalhe-item i {
+    font-size: 22px;
+    color: #E5A93B;
+    /* O amarelo mostarda da marca para dar contraste */
+    min-width: 25px;
+    /* Garante que os ícones ocupam a mesma largura e o texto fica todo alinhado */
+    text-align: center;
+}
+
+/* Removemos margens extra e estilizamos o texto e os links */
+.detalhe-item p {
+    margin: 0;
+    color: #555;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.detalhe-item a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.detalhe-item a:hover {
+    color: #E5A93B;
+}
+
+/* Botão mais largo para ser fácil de clicar no telemóvel */
+.modal-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    /* Ocupa a largura toda do modal */
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 16px;
+    text-transform: uppercase;
 }
 
 footer {

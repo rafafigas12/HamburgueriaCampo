@@ -100,7 +100,7 @@ body {
     transform: scale(1.1);
 }
 
-/* Navegação centralizada no mobile (2 linhas limpas sem sobreposição) */
+/* Navegação centralizada no mobile */
 .navbar nav {
     order: 3;
     width: 100%;
@@ -119,7 +119,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 28px;
+    gap: 20px;
     width: 100%;
 }
 
@@ -127,11 +127,11 @@ body {
     font-family: 'Poppins', sans-serif;
     color: #444;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 12.5px;
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.8px;
-    padding: 4px 6px;
+    letter-spacing: 0.5px;
+    padding: 4px 4px;
     position: relative;
     transition: color 0.3s ease;
 }
@@ -173,6 +173,12 @@ body {
     justify-content: center;
 }
 
+.hero.hero-lojas {
+    min-height: 60vh;
+    min-height: 60dvh;
+    padding-top: 100px;
+}
+
 .hero-bg {
     position: absolute;
     top: 0;
@@ -206,23 +212,25 @@ body {
     z-index: 3;
     max-width: 90%;
     margin: 0 auto;
+    text-align: center;
 }
 
 .hero-content h2 {
-    font-family: 'Fredoka One', cursive;
-    font-size: 28px;
-    line-height: 1.25;
-    margin-bottom: 12px;
-    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    font-family: 'Chewy', cursive;
+    font-size: 44px;
+    line-height: 1.15;
+    letter-spacing: 1px;
+    margin-bottom: 14px;
+    text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.7);
 }
 
 .hero-content p {
     font-family: 'Poppins', sans-serif;
-    font-size: 15px;
-    line-height: 1.5;
+    font-size: 16px;
+    line-height: 1.45;
     margin-bottom: 22px;
-    opacity: 0.95;
-    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+    font-weight: 500;
+    text-shadow: 1px 2px 6px rgba(0, 0, 0, 0.7);
 }
 
 .btn-primary {
@@ -260,13 +268,13 @@ body {
 .categoria-card {
     position: relative;
     background-color: #ffffff;
-    padding: 24px 20px;
-    text-align: center;
     border: 1px solid rgba(0, 0, 0, 0.05);
     border-radius: 16px;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
     overflow: hidden;
     transition: transform 0.25s ease, box-shadow 0.25s ease;
+    display: flex;
+    flex-direction: column;
 }
 
 .categoria-card::before {
@@ -277,6 +285,7 @@ body {
     width: 100%;
     height: 4px;
     background: linear-gradient(90deg, #ffcc00, #e6b800);
+    z-index: 2;
 }
 
 .categoria-card:active,
@@ -329,70 +338,196 @@ body {
 .lojas-grid {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 24px;
     margin-top: 25px;
 }
 
-/* Estilos específicos para os cards das lojas */
-.lojas-grid .categoria-card {
-    text-align: left;
-    padding: 24px 20px 20px 20px;
+/* Regras para imagem e conteúdo dos cartões das lojas em mobile */
+.loja-img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
 }
 
-.lojas-grid .categoria-card h3 {
+.loja-info {
+    padding: 20px 18px 24px 18px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
     text-align: center;
-    font-size: 19px;
-    color: #111;
-    padding-bottom: 12px;
-    border-bottom: 1px solid #f0f0f0;
-    margin-bottom: 16px;
+}
+
+.loja-info h3 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 20px;
+    color: #1a1a1a;
+    margin-bottom: 6px;
     line-height: 1.3;
 }
 
-.lojas-grid .categoria-card br {
-    display: none;
-}
-
-.lojas-grid .categoria-card p {
+.loja-info p {
     font-family: 'Poppins', sans-serif;
-    font-size: 13.5px;
-    color: #444;
-    line-height: 1.5;
-    margin-bottom: 14px;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 18px;
 }
 
-.lojas-grid .categoria-card p strong {
-    font-size: 11px;
-    text-transform: uppercase;
-    letter-spacing: 0.8px;
-    display: block;
-    margin-bottom: 3px;
-    color: #d4a000;
+.loja-info .btn-primary {
+    width: 100%;
+    margin-top: auto;
+    padding: 13px;
+    font-size: 14px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(255, 204, 0, 0.3);
 }
 
-.lojas-grid .categoria-card p a {
-    color: #1a1a1a !important;
+/* --- ESTILOS DO MODAL (POP-UP) PARA MOBILE --- */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 16px;
+}
+
+.modal.mostrar {
+    display: flex;
+    opacity: 1;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 28px 20px 24px 20px;
+    border-radius: 18px;
+    max-width: 480px;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
+    transform: translateY(-20px);
+    transition: transform 0.3s ease;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.modal.mostrar .modal-content {
+    transform: translateY(0);
+}
+
+.fechar-modal {
+    position: absolute;
+    top: 12px;
+    right: 14px;
+    font-size: 26px;
+    font-weight: bold;
+    color: #888;
+    cursor: pointer;
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.05);
+    transition: all 0.2s ease;
+}
+
+.fechar-modal:active,
+.fechar-modal:hover {
+    color: #111;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.modal-titulo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 19px;
     font-weight: 600;
-    text-decoration: underline !important;
-    text-decoration-color: #ffcc00 !important;
-    text-underline-offset: 3px;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #eee;
+    line-height: 1.3;
+}
+
+.modal-detalhes {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.detalhe-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.detalhe-item i {
+    font-size: 20px;
+    color: #E5A93B;
+    min-width: 24px;
+    margin-top: 2px;
+    text-align: center;
+}
+
+.detalhe-item p {
+    margin: 0;
+    color: #444;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 1.45;
+}
+
+.detalhe-item a {
+    color: #1a1a1a;
+    text-decoration: underline;
+    text-decoration-color: #ffcc00;
+    font-weight: 600;
     transition: color 0.2s ease;
 }
 
-.lojas-grid .categoria-card p a:active,
-.lojas-grid .categoria-card p a:hover {
-    color: #d4a000 !important;
+.detalhe-item a:active,
+.detalhe-item a:hover {
+    color: #d4a000;
 }
 
-.lojas-grid .categoria-card .btn-primary {
-    display: block !important;
-    width: 100% !important;
-    text-align: center !important;
-    margin-top: 18px !important;
-    padding: 12px 16px !important;
-    font-size: 14px !important;
-    border-radius: 10px !important;
-    box-shadow: 0 4px 12px rgba(255, 204, 0, 0.3) !important;
+.modal-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 14px;
+    border-radius: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #ffcc00;
+    color: #111;
+    text-decoration: none;
+    border: none;
+    box-shadow: 0 4px 15px rgba(255, 204, 0, 0.35);
+    transition: all 0.2s ease;
+}
+
+.modal-btn:active,
+.modal-btn:hover {
+    background-color: #e6b800;
+    transform: translateY(-1px);
 }
 
 /* Tipografia global de títulos */

@@ -22,17 +22,30 @@ document.addEventListener('DOMContentLoaded', () => {
         const modalInfo = document.getElementById('modal-info');
         const fecharBtn = document.getElementById('fechar-btn');
 
-        // Função para preencher e mostrar o pop-up
         function abrirModal(loja) {
             modalInfo.innerHTML = `
-                <h2 style="font-family: 'Poppins', sans-serif; margin-bottom: 20px;">${loja.nome}</h2>
-                <p><strong>Morada:</strong><br> ${loja.morada}<br>${loja.codigo_postal}</p>
-                <br>
-                <p><strong>Telefone:</strong><br> <a href="tel:${loja.telefone}" style="color: #333; text-decoration: none;">${loja.telefone}</a></p>
-                <br>
-                <p><strong>Horário:</strong><br> ${loja.horario.dias}<br>${loja.horario.horas}</p>
-                <br>
-                <a href="${loja.link_maps}" target="_blank" class="btn-primary" style="padding: 10px 20px; font-size: 16px; display: inline-block; margin-top: 15px;">Abrir Google Maps</a>
+                <h2 class="modal-titulo">${loja.nome}</h2>
+                
+                <div class="modal-detalhes">
+                    <div class="detalhe-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>${loja.morada}<br>${loja.codigo_postal}</p>
+                    </div>
+                    
+                    <div class="detalhe-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <p><a href="tel:${loja.telefone}">${loja.telefone}</a></p>
+                    </div>
+                    
+                    <div class="detalhe-item">
+                        <i class="fa-solid fa-clock"></i>
+                        <p>${loja.horario.dias}<br>${loja.horario.horas}</p>
+                    </div>
+                </div>
+                
+                <a href="${loja.link_maps}" target="_blank" class="btn-primary modal-btn">
+                    <i class="fa-solid fa-map-location-dot"></i> Abrir Google Maps
+                </a>
             `;
             modal.classList.add('mostrar'); // Mostra a janela
         }

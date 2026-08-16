@@ -6,35 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lojas - Hamburgueria do Campo</title>
 
-    <!-- Fontes e Ícones -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Favicon / Logótipo -->
     <link rel="icon" type="image/jpeg" href="fotos/logo.jpg">
 
-    <!-- Os teus ficheiros CSS -->
+    <!-- CSS Mobile e Desktop -->
     <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 768px)">
     <link rel="stylesheet" href="desktop.css" media="screen and (min-width: 769px)">
+
+    <!-- Fontes e Ícones -->
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Fredoka+One&family=Titan+One&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Poppins:wght@400;500;600&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
 
-    <!-- NAVBAR: Igual à da página inicial para manter consistência -->
-    <header class="navbar" style="position: relative; background-color: #f4f4f4;">
-        <!-- Nota: Adicionei um style inline temporário só para a navbar não ficar invisível, 
-             visto que aqui não tens a imagem gigante escura por baixo. -->
+    <header class="navbar">
         <div class="logo">
-            <h1>Hamburgueria do Campo</h1>
+            <h1><a href="index.html">Hamburgueria do Campo</a></h1>
         </div>
         <nav>
             <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
                 <li><a href="index.html#menu">Menu</a></li>
                 <li><a href="lojas.html">Lojas</a></li>
                 <li><a href="index.html#reservas">Reservas</a></li>
             </ul>
         </nav>
         <div class="social-links">
-            <a href="https://www.instagram.com/hamburgueria.docampo/" target="_blank"><i
-                    class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.instagram.com/hamburgueria.docampo/" target="_blank" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
             <a href="https://www.facebook.com/Portela.de.Sintra2022/?locale=pt_PT" target="_blank"
                 aria-label="Facebook">
                 <i class="fa-brands fa-facebook-f"></i>
@@ -43,12 +48,23 @@
     </header>
 
     <main>
-        <!-- Secção das Lojas -->
-        <section class="lojas-section" style="padding-top: 50px;">
-            <h2 style="font-family: 'Poppins', sans-serif; font-size: 32px; color: #1A1A1A;">Os Nossos Espaços</h2>
-            <p style="margin-top: 10px; color: #555;">Encontra a Hamburgueria do Campo mais perto de ti.</p>
+        <!-- Hero Section: Com slider de fundo idêntico ao da página inicial -->
+        <section id="hero" class="hero hero-lojas">
+            <div class="hero-bg slide active" style="background-image: url('fotos/foto_evora.jpeg');"></div>
+            <div class="hero-bg slide" style="background-image: url('fotos/foto_portela.jpeg');"></div>
+            <div class="hero-bg slide" style="background-image: url('fotos/foto_sintra1.jpeg');"></div>
 
-            <!-- O contentor onde o JavaScript vai injetar os cartões -->
+            <div class="hero-content">
+                <h2>Os Nossos Espaços</h2>
+                <p>Encontra a Hamburgueria do Campo mais perto de ti!</p>
+            </div>
+        </section>
+
+        <!-- Secção das Lojas -->
+        <section id="lojas" class="lojas-section">
+            <h2>Visita o nosso Campo!</h2>
+
+            <!-- O contentor onde o JavaScript injeta os cartões das lojas -->
             <div id="lojas-container" class="lojas-grid"></div>
         </section>
     </main>
