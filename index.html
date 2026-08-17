@@ -38,6 +38,7 @@
             <ul class="nav-links">
                 <li><a href="index.html">Início</a></li>
                 <li><a href="index.html#menu">Menu</a></li>
+                <li><a href="delivery.html">Delivery & Takeaway</a></li>
                 <li><a href="lojas.html">Lojas</a></li>
                 <li><a href="index.html#reservas">Reservas</a></li>
             </ul>
@@ -57,17 +58,41 @@
 
     <main>
         <!-- Hero Section: A primeira imagem grande que o utilizador vê -->
-        <section id="hero" class="hero">
-            <!-- Imagens de Fundo -->
-            <div class="hero-bg slide active" style="background-image: url('fotos/6pratos_fundo.jpeg');"></div>
-            <div class="hero-bg slide" style="background-image: url('fotos/interior_sintra.jpg');"></div>
-            <div class="hero-bg slide" style="background-image: url('fotos/salada_fundo.jpeg');"></div>
+        <!-- Hero Section com Slider -->
+        <section class="hero">
+            <!-- 1. IMAGENS DE FUNDO -->
+            <div class="hero-bg active" style="background-image: url('fotos/6pratos_fundo.jpeg');"></div>
+            <div class="hero-bg" style="background-image: url('fotos/salada_fundo.jpeg');"></div>
+            <div class="hero-bg" style="background-image: url('fotos/interior_sintra.jpg');"></div>
 
-            <!--<div class="hero-content">
-                <h2>O Verdadeiro Sabor Artesanal</h2>
-                <p>Ingredientes frescos, confecionados com paixão.</p>
-                <a href="#menu" class="btn-primary">Ver Menu</a>
-            </div> -->
+            <!-- 2. BLOCOS DE TEXTO (Sincronizados com as imagens) -->
+
+            <!-- Texto 1: Focado nas Lojas -->
+            <div class="hero-content hero-text active">
+                <h2>Visite o nosso Campo!</h2>
+                <p>Descubra as nossas lojas e a sua localização!</p>
+                <a href="lojas.html" class="btn-primary"
+                    style="background-color: #FFCC00; color: #111; padding: 12px 30px; font-weight: bold; border-radius: 4px; display: inline-block; margin-top: 20px; text-decoration: none;">Ver
+                    Lojas</a>
+            </div>
+
+            <!-- Texto 2: Focado no Menu -->
+            <div class="hero-content hero-text">
+                <h2>O Verdadeiro Sabor</h2>
+                <p>Ingredientes frescos e hambúrgueres artesanais.</p>
+                <a href="index.html#menu" class="btn-primary"
+                    style="background-color: #FFCC00; color: #111; padding: 12px 30px; font-weight: bold; border-radius: 4px; display: inline-block; margin-top: 20px; text-decoration: none;">Ver
+                    Menu</a>
+            </div>
+
+            <!-- Texto 3: Focado nas Reservas -->
+            <div class="hero-content hero-text">
+                <h2>Sem Filas, Sem Espera</h2>
+                <p>Garanta já a sua mesa num dos nossos espaços.</p>
+                <a href="index.html#reservas" class="btn-primary"
+                    style="background-color: #FFCC00; color: #111; padding: 12px 30px; font-weight: bold; border-radius: 4px; display: inline-block; margin-top: 20px; text-decoration: none;">Fazer
+                    Reserva</a>
+            </div>
         </section>
 
         <!-- Secção de Categorias de Menu (Estilo Hamburgueria do Bairro) -->

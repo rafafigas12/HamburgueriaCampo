@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery & Encomendas - Hamburgueria do Campo</title>
+
+    <!-- Favicon / Logótipo -->
+    <link rel="icon" type="image/jpeg" href="fotos/logo.jpg">
+
+    <!-- CSS Mobile e Desktop -->
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 768px)">
+    <link rel="stylesheet" href="desktop.css" media="screen and (min-width: 769px)">
+
+    <!-- Fontes e Ícones -->
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Fredoka+One&family=Titan+One&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <h1><a href="index.html">Hamburgueria do Campo</a></h1>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="index.html#menu">Menu</a></li>
+                <li><a href="delivery.html">Delivery & Takeaway</a></li>
+                <li><a href="lojas.html">Lojas</a></li>
+                <li><a href="index.html#reservas">Reservas</a></li>
+            </ul>
+        </nav>
+        <div class="social-links">
+            <a href="https://www.instagram.com/hamburgueria.docampo/" target="_blank" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/Portela.de.Sintra2022/?locale=pt_PT" target="_blank"
+                aria-label="Facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section com Slider -->
+        <section id="hero" class="hero hero-lojas">
+            <div class="hero-bg slide active" style="background-image: url('fotos/6pratos_fundo.jpeg');"></div>
+            <div class="hero-bg slide" style="background-image: url('fotos/foto_sintra.jpeg');"></div>
+            <div class="hero-bg slide" style="background-image: url('fotos/foto_evora.jpeg');"></div>
+
+            <div class="hero-content">
+                <h2>Entrega ao Domicílio</h2>
+                <p>Os teus hambúrgueres artesanais favoritos à distância de um clique!</p>
+            </div>
+        </section>
+
+        <!-- Secção de Plataformas por Loja -->
+        <section class="lojas-section">
+            <h2>Onde queres encomendar?</h2>
+            <p style="margin-bottom: 25px; color: #666; font-family: 'Poppins', sans-serif;">Escolhe a tua loja mais
+                próxima e faz o pedido pelas tuas plataformas preferidas ou liga diretamente para Takeaway.</p>
+
+            <div class="lojas-grid">
+                <!-- Loja 1: Portela de Sintra -->
+                <div class="categoria-card">
+                    <img src="fotos/foto_portela.jpeg" alt="Hamburgueria do Campo - Portela de Sintra" class="loja-img">
+                    <div class="loja-info">
+                        <h3>Portela de Sintra</h3>
+                        <p style="margin-bottom: 15px;"><i class="fa-solid fa-location-dot" style="color: #E5A93B;"></i>
+                            R. Pedro de Cintra n.11/13, Sintra</p>
+
+                        <div class="delivery-btn-group">
+                            <a href="https://www.ubereats.com/pt/store/hamburgueria-do-campo-portela-de-sintra/bB1AwB-MTIyEBAqzNUSHmA?srsltid=AfmBOopCD7qiyghsATR9Zv7jrGJJgKOyk2OOXq67D_ASVG1xNcEPWi_T"
+                                target="_blank" class="btn-delivery btn-ubereats">
+                                <i class="fa-solid fa-bag-shopping"></i> Uber Eats
+                            </a>
+                            <a href="tel:+351219230059" class="btn-delivery btn-takeaway">
+                                <i class="fa-solid fa-phone"></i> Takeaway (+351 219 230 059)
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Loja 2: São Pedro de Sintra -->
+                <div class="categoria-card">
+                    <img src="fotos/foto_sintra.jpeg" alt="Hamburgueria do Campo - São Pedro de Sintra"
+                        class="loja-img">
+                    <div class="loja-info">
+                        <h3>São Pedro de Sintra</h3>
+                        <p style="margin-bottom: 15px;"><i class="fa-solid fa-location-dot" style="color: #E5A93B;"></i>
+                            R. Aviador Carlos Bleck 8, Sintra</p>
+
+                        <div class="delivery-btn-group">
+                            <a href="tel:+351962282029" class="btn-delivery btn-takeaway">
+                                <i class="fa-solid fa-phone"></i> Takeaway (+351 962 282 029)
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Loja 3: Évora -->
+                <div class="categoria-card">
+                    <img src="fotos/foto_evora.jpeg" alt="Hamburgueria do Campo - Évora" class="loja-img">
+                    <div class="loja-info">
+                        <h3>Évora</h3>
+                        <p style="margin-bottom: 15px;"><i class="fa-solid fa-location-dot" style="color: #E5A93B;"></i>
+                            R. da Horta das Figueiras 110, Évora</p>
+
+                        <div class="delivery-btn-group">
+                            <a href="https://www.ubereats.com/pt/store/hamburgueria-do-campo-evora/VFdEtLSDUSOsjsYKXBwNRQ?srsltid=AfmBOoqNvk9jHeVF0KWCkvpVdH6qfAR1sJx-z6vZvQYL28StPp22Oqyx"
+                                target="_blank" class="btn-delivery btn-ubereats">
+                                <i class="fa-solid fa-bag-shopping"></i> Uber Eats
+                            </a>
+                            <a href="tel:+351266106653" class="btn-delivery btn-takeaway">
+                                <i class="fa-solid fa-phone"></i> Takeaway (+351 266 106 653)
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vantagens do Delivery -->
+            <div class="delivery-vantagens">
+                <div class="vantagem-card">
+                    <i class="fa-solid fa-fire-burner"></i>
+                    <h4>Ingredientes Frescos</h4>
+                    <p>Carne 100% novilho e ingredientes selecionados diariamente para o melhor sabor.</p>
+                </div>
+                <div class="vantagem-card">
+                    <i class="fa-solid fa-truck-fast"></i>
+                    <h4>Entrega Rápida</h4>
+                    <p>Recebe a tua refeição quente e bem acondicionada no conforto do teu lar.</p>
+                </div>
+                <div class="vantagem-card">
+                    <i class="fa-solid fa-box-open"></i>
+                    <h4>Embalagens Ecológicas</h4>
+                    <p>Embalagens amigas do ambiente e desenvolvidas para manter a crocância.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Hamburgueria do Campo. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="lojas.js"></script>
+</body>
+
+</html>

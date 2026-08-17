@@ -215,6 +215,25 @@ body {
     text-align: center;
 }
 
+/* --- TRANSIÇÃO DO TEXTO DO SLIDER --- */
+.hero-text {
+    position: absolute;
+    /* Faz com que os textos fiquem sobrepostos no centro do ecrã */
+    opacity: 0;
+    visibility: hidden;
+    /* Evita que o utilizador clique num botão invisível */
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    /* Um pequeno toque de design: o texto vem ligeiramente de baixo para cima ao aparecer */
+    transform: translateY(20px);
+}
+
+/* O texto ativo ganha opacidade e volta à posição original */
+.hero-text.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
 .hero-content h2 {
     font-family: 'Chewy', cursive;
     font-size: 44px;
@@ -531,22 +550,24 @@ body {
 }
 
 /* Tipografia global de títulos */
-h2, h3 {
+h2,
+h3 {
     font-family: 'Fredoka One', cursive;
 }
 
 /* --- FOOTER --- */
 footer {
     background-color: #111;
-    color: #eee;
+    color: #aaa;
     text-align: center;
-    padding: 30px 20px;
+    padding: 20px;
     font-family: 'Poppins', sans-serif;
-    font-size: 13px;
+    font-size: 12px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 12px;
+    justify-content: center;
+    gap: 8px;
     border-top: 3px solid #ffcc00;
 }
 
@@ -577,4 +598,13 @@ footer p {
     background-color: #ffcc00;
     color: #111;
     transform: scale(1.05);
-}
+}
+
+/* Delivery em Mobile */
+.delivery-vantagens {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 35px auto 10px auto;
+    padding: 0 18px;
+}

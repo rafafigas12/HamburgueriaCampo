@@ -134,21 +134,24 @@ document.addEventListener('DOMContentLoaded', () => {
             containerLojas.appendChild(lojaCard);
         });
     }
-    // --- CÓDIGO DO SLIDER DA HERO SECTION ---
+    // --- LÓGICA DO SLIDER (HERO SECTION) ---
     const slides = document.querySelectorAll('.hero-bg');
+    const textos = document.querySelectorAll('.hero-text'); // Procura os novos blocos de texto
     let currentSlide = 0;
 
-    if (slides.length > 0) {
+    // Só executa se encontrar as imagens e os textos na página
+    if (slides.length > 0 && textos.length > 0) {
         setInterval(() => {
-            // Remove a classe 'active' da imagem atual (esconde)
+            // 1. Esconde a imagem e o texto atuais
             slides[currentSlide].classList.remove('active');
+            textos[currentSlide].classList.remove('active');
 
-            // Passa para a próxima imagem. 
-            // O operador '%' garante que se chegar ao fim, volta ao zero.
+            // 2. Avança para o próximo slide (volta a zero se chegar ao fim)
             currentSlide = (currentSlide + 1) % slides.length;
 
-            // Adiciona a classe 'active' à nova imagem (mostra)
+            // 3. Mostra a nova imagem e o novo texto
             slides[currentSlide].classList.add('active');
-        }, 5000); // 5000 ms = 5 segundos
+            textos[currentSlide].classList.add('active');
+        }, 5000); // Muda a cada 5 segundos
     }
 });
