@@ -61,22 +61,27 @@ body {
     list-style: none;
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
+    white-space: nowrap;
+}
+
+.icone-menu {
+    color: transparent;
+    -webkit-text-stroke: 1.5px #333;
+    margin-right: 5px;
 }
 
 /* 1. Prepara o link para receber a animação */
 .nav-links a {
     font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    /* Define a grossura da letra */
-    letter-spacing: 0.5px;
-    /* Dá um ligeiro respiro entre as letras */
+    font-weight: 600;
+    letter-spacing: 0.3px;
     color: #333;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 14px;
     text-transform: uppercase;
     position: relative;
-    /* Essencial para a linha saber onde se posicionar */
+    white-space: nowrap;
     transition: color 0.3s;
 }
 

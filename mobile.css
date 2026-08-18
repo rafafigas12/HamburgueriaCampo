@@ -158,6 +158,12 @@ body {
     width: 100%;
 }
 
+.icone-menu {
+    color: transparent;
+    -webkit-text-stroke: 1.5px #333;
+    margin-right: 5px;
+}
+
 .nav-links a {
     font-family: 'Poppins', sans-serif;
     color: #333;
