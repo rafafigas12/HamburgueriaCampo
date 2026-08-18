@@ -32,12 +32,11 @@ body {
 
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     align-items: center;
-    padding: 10px 16px;
-    gap: 8px 0;
+    justify-content: space-between;
+    padding: 10px 12px;
 
-    background-color: rgba(255, 255, 255, 0.94);
+    background-color: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
@@ -49,15 +48,19 @@ body {
     order: 1;
     display: flex;
     align-items: center;
+    flex-shrink: 1;
+    min-width: 0;
 }
 
 .logo h1 {
     font-family: 'Chewy', cursive;
-    font-size: 20px;
-    letter-spacing: 0.5px;
+    font-size: 17px;
+    letter-spacing: 0.3px;
     color: #1a1a1a;
     margin: 0;
-    line-height: 1.2;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .logo h1 a {
@@ -75,15 +78,17 @@ body {
     order: 2;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 6px;
     margin-left: auto;
+    margin-right: 6px;
+    flex-shrink: 0;
 }
 
 .social-links a {
     color: #333;
-    font-size: 18px;
-    width: 36px;
-    height: 36px;
+    font-size: 15px;
+    width: 32px;
+    height: 32px;
     border-radius: 50%;
     background-color: rgba(0, 0, 0, 0.04);
     text-decoration: none;
@@ -97,66 +102,83 @@ body {
 .social-links a:active {
     color: #111;
     background-color: #ffcc00;
-    transform: scale(1.1);
+    transform: scale(1.08);
 }
 
-/* Navegação centralizada no mobile */
-.navbar nav {
+/* Botão Hambúrguer em Mobile */
+.menu-toggle {
     order: 3;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #1a1a1a;
+    cursor: pointer;
+    padding: 4px 6px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+.menu-toggle:active,
+.menu-toggle:hover {
+    color: #d4a000;
+    background-color: rgba(0, 0, 0, 0.04);
+}
+
+/* Navegação encolhida por defeito no mobile (expande abaixo numa nova linha apenas quando active) */
+.navbar nav {
+    order: 4;
+    flex-basis: 100%;
     width: 100%;
     position: static;
     transform: none;
     left: auto;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0 4px 0;
+    margin-top: 6px;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.navbar nav.active {
     display: flex;
-    justify-content: center;
-    padding-top: 8px;
-    margin-top: 2px;
-    border-top: 1px solid rgba(0, 0, 0, 0.06);
 }
 
 .nav-links {
     list-style: none;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 8px;
     width: 100%;
 }
 
 .nav-links a {
     font-family: 'Poppins', sans-serif;
-    color: #444;
+    color: #333;
     text-decoration: none;
-    font-size: 12.5px;
+    font-size: 13.5px;
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
-    padding: 4px 4px;
+    letter-spacing: 0.8px;
+    padding: 8px 16px;
+    width: 100%;
+    text-align: center;
+    display: block;
     position: relative;
-    transition: color 0.3s ease;
-}
-
-.nav-links a::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2.5px;
-    bottom: -2px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #ffcc00;
-    border-radius: 2px;
-    transition: width 0.3s ease;
-}
-
-.nav-links a:hover::after,
-.nav-links a:active::after {
-    width: 80%;
+    transition: color 0.3s ease, background-color 0.2s ease;
+    border-radius: 6px;
 }
 
 .nav-links a:hover,
 .nav-links a:active {
     color: #111;
+    background-color: rgba(255, 204, 0, 0.2);
 }
 
 /* --- HERO SECTION SLIDER --- */
@@ -255,23 +277,26 @@ body {
 .btn-primary {
     display: inline-block;
     padding: 13px 26px;
-    background-color: #ffcc00;
+    background-color: #ffffff;
     color: #111;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-size: 14px;
     border-radius: 30px;
-    box-shadow: 0 4px 15px rgba(255, 204, 0, 0.35);
+    border: 2px solid #ffcc00;
+    box-shadow: 0 4px 15px rgba(255, 204, 0, 0.25);
     transition: all 0.25s ease;
+    cursor: pointer;
 }
 
 .btn-primary:active,
 .btn-primary:hover {
-    background-color: #ffffff;
+    background-color: #ffcc00;
     color: #111;
+    border: 2px solid #ffcc00;
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.3);
+    box-shadow: 0 6px 20px rgba(255, 204, 0, 0.4);
 }
 
 /* --- SECÇÃO DE CATEGORIAS DO MENU --- */
@@ -287,7 +312,7 @@ body {
 .categoria-card {
     position: relative;
     background-color: #ffffff;
-    border: 1px solid rgba(0, 0, 0, 0.05);
+    border: 2px solid #ffcc00;
     border-radius: 16px;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
     overflow: hidden;
@@ -397,9 +422,12 @@ body {
     padding: 13px;
     font-size: 14px;
     border-radius: 12px;
-    border: none;
+    border: 2px solid #ffcc00;
+    background-color: #ffffff;
+    color: #111;
     cursor: pointer;
-    box-shadow: 0 4px 12px rgba(255, 204, 0, 0.3);
+    box-shadow: 0 4px 12px rgba(255, 204, 0, 0.25);
+    transition: all 0.25s ease;
 }
 
 /* --- ESTILOS DO MODAL (POP-UP) PARA MOBILE --- */
@@ -535,17 +563,19 @@ body {
     font-size: 15px;
     font-weight: 700;
     text-transform: uppercase;
-    background-color: #ffcc00;
+    background-color: #ffffff;
     color: #111;
+    border: 2px solid #ffcc00;
     text-decoration: none;
-    border: none;
-    box-shadow: 0 4px 15px rgba(255, 204, 0, 0.35);
+    box-shadow: 0 4px 15px rgba(255, 204, 0, 0.25);
     transition: all 0.2s ease;
 }
 
 .modal-btn:active,
 .modal-btn:hover {
-    background-color: #e6b800;
+    background-color: #ffcc00;
+    color: #111;
+    border: 2px solid #ffcc00;
     transform: translateY(-1px);
 }
 
@@ -607,4 +637,79 @@ footer p {
     gap: 16px;
     margin: 35px auto 10px auto;
     padding: 0 18px;
+}
+
+/* --- PLATAFORMAS DE DELIVERY EM MOBILE --- */
+.delivery-btn-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.btn-delivery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 13px 16px;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.25s ease;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.btn-ubereats {
+    background-color: #06C167;
+    color: #ffffff;
+}
+
+.btn-ubereats:hover,
+.btn-ubereats:active {
+    background-color: #05a055;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.btn-glovo {
+    background-color: #FFC244;
+    color: #000000;
+}
+
+.btn-glovo:hover,
+.btn-glovo:active {
+    background-color: #e6af3d;
+    color: #000000;
+    transform: translateY(-2px);
+}
+
+.btn-bolt {
+    background-color: #34E883;
+    color: #111111;
+}
+
+.btn-bolt:hover,
+.btn-bolt:active {
+    background-color: #2bc870;
+    color: #111111;
+    transform: translateY(-2px);
+}
+
+.btn-takeaway {
+    background-color: #ffffff;
+    color: #111111;
+    border: 2px solid #ffcc00;
+}
+
+.btn-takeaway:hover,
+.btn-takeaway:active {
+    background-color: #ffcc00;
+    color: #111111;
+    border: 2px solid #ffcc00;
+    transform: translateY(-2px);
 }

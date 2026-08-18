@@ -1,6 +1,37 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+    // --- LÓGICA DO MENU HAMBÚRGUER (MOBILE) ---
+    const menuToggle = document.getElementById('menu-toggle');
+    const navMenu = document.querySelector('.navbar nav');
 
+    if (menuToggle && navMenu) {
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            const icon = menuToggle.querySelector('i');
+            if (icon) {
+                if (navMenu.classList.contains('active')) {
+                    icon.classList.remove('fa-bars');
+                    icon.classList.add('fa-xmark');
+                } else {
+                    icon.classList.remove('fa-xmark');
+                    icon.classList.add('fa-bars');
+                }
+            }
+        });
+
+        // Fechar o menu ao clicar num link de navegação
+        const navLinks = navMenu.querySelectorAll('a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                const icon = menuToggle.querySelector('i');
+                if (icon) {
+                    icon.classList.remove('fa-xmark');
+                    icon.classList.add('fa-bars');
+                }
+            });
+        });
+    }
 
     const containerLojas = document.getElementById('lojas-container');
 
@@ -123,7 +154,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <h3>${loja.nome}</h3>
                     <p style="color: #777; font-size: 14px; margin-bottom: 20px;">${ruaApenas}</p>
                     <!-- O botão que aciona o modal -->
-                    <button class="btn-primary btn-detalhes" style="padding: 10px 15px; font-size: 14px; cursor: pointer; border: none; width: 100%; margin-top: auto;">Ver Detalhes</button>
+                    <button class="btn-primary btn-detalhes" style="padding: 10px 15px; font-size: 14px; cursor: pointer; width: 100%; margin-top: auto;">Ver Detalhes</button>
                 </div>
             `;
 

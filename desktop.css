@@ -39,6 +39,10 @@ body {
     white-space: nowrap;
 }
 
+.menu-toggle {
+    display: none !important;
+}
+
 /* Menu de navegação perfeitamente centrado no ecrã */
 .navbar nav {
     position: absolute;
@@ -237,33 +241,29 @@ body {
     text-shadow: 2px 3px 6px rgba(0, 0, 0, 0.7);
 }
 
-/* Ajustes no botão para combinar com o fundo escuro */
-.hero .btn-primary {
-    background-color: #ffcc00;
-    /* Botão amarelo */
-    color: #111;
-    /* Texto do botão escuro */
-}
-
-.hero .btn-primary:hover {
-    background-color: #fff;
-}
-
+/* Estilos universais do botão principal (.btn-primary) */
 .btn-primary {
     display: inline-block;
-    margin-top: 30px;
-    padding: 15px 30px;
-    background-color: #ffcc00;
+    padding: 14px 28px;
+    background-color: #ffffff;
     color: #111;
     text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-    border-radius: 4px;
-    transition: background-color 0.3s;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 30px;
+    border: 2px solid #ffcc00;
+    box-shadow: 0 4px 15px rgba(255, 204, 0, 0.25);
+    transition: all 0.25s ease;
+    cursor: pointer;
 }
 
-.btn-primary:hover {
-    background-color: #e6b800;
+.btn-primary:hover,
+.btn-primary:active {
+    background-color: #ffcc00;
+    color: #111;
+    border: 2px solid #ffcc00;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 204, 0, 0.4);
 }
 
 /* Categorias de Menu em Grelha Horizontal */
@@ -279,17 +279,13 @@ body {
 .categoria-card {
     background-color: #fff;
     text-align: center;
-    border: 1px solid #eee;
-    border-radius: 8px;
+    border: 2px solid #ffcc00;
+    border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s;
-
-    /* NOVAS REGRAS */
+    transition: transform 0.3s, box-shadow 0.3s;
     overflow: hidden;
-    /* Fundamental: impede que as pontas quadradas da imagem saiam fora dos cantos arredondados do cartão */
     display: flex;
     flex-direction: column;
-    /* Garante que a imagem fica em cima e o texto em baixo */
 }
 
 /* Regras para a nova imagem */
@@ -488,18 +484,33 @@ h3 {
     color: #E5A93B;
 }
 
-/* Botão mais largo para ser fácil de clicar no telemóvel */
+/* Botão do modal com fundo branco, contorno amarelo e hover amarelo */
 .modal-btn {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
     width: 100%;
-    /* Ocupa a largura toda do modal */
     padding: 15px;
     border-radius: 8px;
     font-size: 16px;
+    font-weight: 700;
     text-transform: uppercase;
+    background-color: #ffffff;
+    color: #111;
+    border: 2px solid #ffcc00;
+    box-shadow: 0 4px 15px rgba(255, 204, 0, 0.25);
+    transition: all 0.25s ease;
+    text-decoration: none;
+}
+
+.modal-btn:hover,
+.modal-btn:active {
+    background-color: #ffcc00;
+    color: #111;
+    border: 2px solid #ffcc00;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 204, 0, 0.4);
 }
 
 footer {
@@ -603,8 +614,7 @@ footer p {
     padding: 30px 20px;
     border-radius: 12px;
     text-align: center;
-    border: 1px solid #eee;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
 }
 
 .vantagem-card i {
