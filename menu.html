@@ -66,12 +66,94 @@
             <!-- Botões de Filtro -->
             <div class="filtros-menu">
                 <button class="btn-filtro ativo" data-filtro="todos">Todos</button>
-                <button class="btn-filtro" data-filtro="hamburgueres">Hambúrgueres</button>
-                <button class="btn-filtro" data-filtro="peixe">Peixe</button>
+                <button class="btn-filtro" data-filtro="entradas">Entradas</button>
+                <button class="btn-filtro" data-filtro="hamburgueres">No Pão</button>
+                <button class="btn-filtro" data-filtro="peixe">Do Mar</button>
+                <button class="btn-filtro" data-filtro="prato">No Prato</button>
+                <button class="btn-filtro" data-filtro="saladas">Saladas</button>
+                <button class="btn-filtro" data-filtro="vegan">Vegan</button>
+
             </div>
 
             <!-- Grelha de Produtos -->
             <div class="grelha-menu">
+
+                <!-- ENTRADAS -->
+
+                <div class="cartao-produto" data-categoria="entradas">
+                    <img src="https://tb-static.uber.com/prod/image-proc/processed_images/4dba9501985c8b1e8b8b80b45553c578/d03e52b3c8af19d8fa8222e23efd9cfa.jpeg"
+                        alt="Bolinha de Alheira" class="produto-img">
+                    <div class="produto-info">
+                        <h3>Bolinha de Alheira (6 un.)</h3>
+                        <p>Seis bolinhas de alheira, enchido português em porções individuais.</p>
+                        <span class="preco">7,35€</span>
+                    </div>
+                </div>
+
+                <div class="cartao-produto" data-categoria="entradas">
+                    <img src="https://tb-static.uber.com/prod/image-proc/processed_images/a23110aa78f31bcb669842c9bbe30bdc/d03e52b3c8af19d8fa8222e23efd9cfa.jpeg"
+                        alt="Chamuça" class="produto-img">
+                    <div class="produto-info">
+                        <h3>Chamuça (6 un.)</h3>
+                        <p>Deliciosas chamuças clássicas e estaladiças.</p>
+                        <span class="preco">7,35€</span>
+                    </div>
+                </div>
+
+                <div class="cartao-produto" data-categoria="entradas">
+                    <img src="https://tb-static.uber.com/prod/image-proc/processed_images/b65890165d96d403c6603d070ff49737/d03e52b3c8af19d8fa8222e23efd9cfa.jpeg"
+                        alt="Bolo do Caco com Manteiga de Alho" class="produto-img">
+                    <div class="produto-info">
+                        <span class="tag-popular">Popular</span>
+                        <h3>Bolo do Caco c/ Manteiga de Alho</h3>
+                        <p>Bolo do caco da Madeira, cortado em quartos e barrado com manteiga de alho.</p>
+                        <span class="preco">4,85€</span>
+                    </div>
+                </div>
+
+                <div class="cartao-produto" data-categoria="entradas">
+                    <img src="https://tb-static.uber.com/prod/image-proc/processed_images/4dde0f5f3b7ed08dee67d122fbf2fd64/d03e52b3c8af19d8fa8222e23efd9cfa.jpeg"
+                        alt="Bolo do Caco com Mozzarella" class="produto-img">
+                    <div class="produto-info">
+                        <span class="tag-popular">Popular</span>
+                        <h3>Bolo do Caco c/ Mozzarella</h3>
+                        <p>Bolo do caco coberto com mozzarella, cortado em triângulos.</p>
+                        <span class="preco">6,65€</span>
+                    </div>
+                </div>
+
+                <div class="cartao-produto" data-categoria="entradas">
+                    <img src="https://tb-static.uber.com/prod/image-proc/processed_images/11a6ff2d17d6f5746674de26d57a5965/d03e52b3c8af19d8fa8222e23efd9cfa.jpeg"
+                        alt="Bolo do Caco com Mozzarella e Pepperoni" class="produto-img">
+                    <div class="produto-info">
+                        <span class="tag-popular">Popular</span>
+                        <h3>Bolo do Caco c/ Mozzarella e Pepperoni</h3>
+                        <p>Bolo do caco coberto com mozzarella derretida e fatias de pepperoni.</p>
+                        <span class="preco">6,65€</span>
+                    </div>
+                </div>
+
+                <div class="cartao-produto" data-categoria="entradas">
+                    <img src="https://tb-static.uber.com/prod/image-proc/processed_images/c3c4a0e953162d664bb8c19d26802214/d03e52b3c8af19d8fa8222e23efd9cfa.jpeg"
+                        alt="Bolo do Caco Vegetariano" class="produto-img">
+                    <div class="produto-info">
+                        <h3>Bolo do Caco Vegetariano</h3>
+                        <p>Mozzarella, cogumelos e tomate cherry.</p>
+                        <span class="preco">6,65€</span>
+                    </div>
+                </div>
+
+                <div class="cartao-produto" data-categoria="entradas">
+                    <img src="https://tb-static.uber.com/prod/image-proc/processed_images/85e669909656b8cb3bb85c9571dd8fef/d03e52b3c8af19d8fa8222e23efd9cfa.jpeg"
+                        alt="Crispy Batata" class="produto-img">
+                    <div class="produto-info">
+                        <h3>Crispy Batata</h3>
+                        <p>Gomos de batata crocantes com molho de queijo e cebola roxa.</p>
+                        <span class="preco">8,10€</span>
+                    </div>
+                </div>
+
+                <!-- FIM DAS ENTRADAS -->
 
                 <!-- 1. Natura -->
                 <div class="cartao-produto" data-categoria="hamburgueres">
@@ -225,6 +307,148 @@
                         <span class="preco">14,95€</span>
                     </div>
                 </div>
+
+                <!-- 14. Prego em Bolo do Caco (Alternativa) -->
+                <div class="cartao-produto" data-categoria="hamburgueres">
+                    <img src="https://tb-static.uber.com/prod/image-proc/processed_images/cec2916b9892ce6f8986b3cc921eeb51/d03e52b3c8af19d8fa8222e23efd9cfa.jpeg"
+                        alt="Prego em Bolo do Caco" class="produto-img">
+                    <div class="produto-info">
+                        <h3>Prego em Bolo do Caco</h3>
+                        <p>Sandes de bife de vaca laminado no bolo do caco.</p>
+                        <span class="preco">11,35€</span>
+                    </div>
+                </div>
+
+                <!-- NO PRATO -->
+
+                <div class="cartao-produto" data-categoria="prato">
+                    <img src="https://tb-static.uber.com/prod/image-proc/processed_images/daeb1a7faba627c4c526bc3747767142/d03e52b3c8af19d8fa8222e23efd9cfa.jpeg"
+                        alt="Bife Angus da Vazia com Pimenta" class="produto-img">
+                    <div class="produto-info">
+                        <h3>Bife Angus da Vazia c/ Pimenta</h3>
+                        <p>Bife de angus da vazia tenro e suculento com molho de pimenta.</p>
+                        <span class="preco">20,35€</span>
+                    </div>
+                </div>
+
+                <div class="cartao-produto" data-categoria="prato">
+                    <img src="https://tb-static.uber.com/prod/image-proc/processed_images/9251b94dfd012359b06170123fbfff7d/d03e52b3c8af19d8fa8222e23efd9cfa.jpeg"
+                        alt="Bife Angus da Vazia com Natas e Cogumelos" class="produto-img">
+                    <div class="produto-info">
+                        <span class="tag-popular">Popular</span>
+                        <h3>Bife Angus da Vazia c/ Natas e Cogumelos</h3>
+                        <p>Bife de angus da vazia coberto com molho cremoso de natas e cogumelos.</p>
+                        <span class="preco">20,35€</span>
+                    </div>
+                </div>
+
+                <div class="cartao-produto" data-categoria="prato">
+                    <img src="https://tb-static.uber.com/prod/image-proc/processed_images/9a0eced93d524fe9c3aad3799397276b/d03e52b3c8af19d8fa8222e23efd9cfa.jpeg"
+                        alt="Hambúrguer Angus com Natas e Cogumelos" class="produto-img">
+                    <div class="produto-info">
+                        <span class="tag-popular">Popular</span>
+                        <h3>Hambúrguer Angus c/ Natas e Cogumelos</h3>
+                        <p>Hambúrguer de angus, molho cremoso de natas e cogumelos.</p>
+                        <span class="preco">12,40€</span>
+                    </div>
+                </div>
+
+                <div class="cartao-produto" data-categoria="prato">
+                    <img src="https://tb-static.uber.com/prod/image-proc/processed_images/1134e3daad37d6121e0b2178441d49d4/d03e52b3c8af19d8fa8222e23efd9cfa.jpeg"
+                        alt="Hambúrguer Angus Serra e Mar" class="produto-img">
+                    <div class="produto-info">
+                        <h3>Hambúrguer Angus Serra e Mar</h3>
+                        <p>Hambúrguer de angus, queijo da Serra, presunto, camarão, lâminas de alho e coentros.</p>
+                        <span class="preco">13,65€</span>
+                    </div>
+                </div>
+
+                <!-- FIM DO NO PRATO -->
+
+                <!-- SALADAS -->
+
+                <div class="cartao-produto" data-categoria="saladas">
+                    <img src="https://tb-static.uber.com/prod/image-proc/processed_images/30117fde571b9cc0d32ddcf7ee0ad888/d03e52b3c8af19d8fa8222e23efd9cfa.jpeg"
+                        alt="Salada de Salmão" class="produto-img">
+                    <div class="produto-info">
+                        <span class="tag-popular">Popular</span>
+                        <h3>Salada de Salmão</h3>
+                        <p>Lombo de salmão braseado, lentilhas, soja, croutons, sementes de sésamo, ovo cozido e
+                            abacate. Com tempero de molho de vinagrete e vinagre balsâmico.</p>
+                        <span class="preco">14,35€</span>
+                    </div>
+                </div>
+
+                <div class="cartao-produto" data-categoria="saladas">
+                    <img src="https://tb-static.uber.com/prod/image-proc/processed_images/b921fb1d956c0c7df3bcc3e0287cce69/d03e52b3c8af19d8fa8222e23efd9cfa.jpeg"
+                        alt="Salada de Atum" class="produto-img">
+                    <div class="produto-info">
+                        <h3>Salada de Atum</h3>
+                        <p>Lombo de atum braseado, lentilhas, cenoura, soja, croutons, sementes de sésamo e abacate. Com
+                            tempero de molho de vinagrete e vinagre balsâmico.</p>
+                        <span class="preco">14,35€</span>
+                    </div>
+                </div>
+
+                <div class="cartao-produto" data-categoria="saladas">
+                    <img src="https://tb-static.uber.com/prod/image-proc/processed_images/66dc7ac4e920209a3eb81b4f0cc1bd39/d03e52b3c8af19d8fa8222e23efd9cfa.jpeg"
+                        alt="Salada de Serra e Mar" class="produto-img">
+                    <div class="produto-info">
+                        <h3>Salada de Serra e Mar</h3>
+                        <p>Alface americana, tomate cherry, ervas frescas, parmesão, ananás e miolo de camarão. Com
+                            tempero de molho de vinagrete e vinagre balsâmico.</p>
+                        <span class="preco">15,25€</span>
+                    </div>
+                </div>
+
+                <div class="cartao-produto" data-categoria="saladas">
+                    <img src="https://tb-static.uber.com/prod/image-proc/processed_images/34a23bfdcf4d226c9c4922f56b9699b2/d03e52b3c8af19d8fa8222e23efd9cfa.jpeg"
+                        alt="Salada Grega" class="produto-img">
+                    <div class="produto-info">
+                        <h3>Salada Grega</h3>
+                        <p>Alface ibérica, mistura de quinoa, tomate cherry, milho, cebola roxa, queijo feta com vinagre
+                            balsâmico ou mostarda e mel. Com tempero de molho de vinagrete e vinagre balsâmico.</p>
+                        <span class="preco">13,05€</span>
+                    </div>
+                </div>
+
+                <div class="cartao-produto" data-categoria="saladas">
+                    <img src="https://tb-static.uber.com/prod/image-proc/processed_images/0c56ed25457de9f8f55310bb918532e2/d03e52b3c8af19d8fa8222e23efd9cfa.jpeg"
+                        alt="Salada Primavera" class="produto-img">
+                    <div class="produto-info">
+                        <h3>Salada Primavera</h3>
+                        <p>Alface ibérica, manjericão, tomate cherry, manga, abacaxi e maçã com molho de iogurte. Com
+                            tempero de molho de vinagrete e vinagre balsâmico.</p>
+                        <span class="preco">13,05€</span>
+                    </div>
+                </div>
+
+                <!-- FIM DAS SALADAS -->
+
+                <!-- VEGAN -->
+
+                <div class="cartao-produto" data-categoria="vegan">
+                    <img src="https://tb-static.uber.com/prod/image-proc/processed_images/3eb32a6026bc202fe816e79ca48b9ef4/d03e52b3c8af19d8fa8222e23efd9cfa.jpeg"
+                        alt="Verduxo" class="produto-img">
+                    <div class="produto-info">
+                        <h3>Verduxo</h3>
+                        <p>Hambúrguer frito de tofu, cenoura, cogumelos, courgette e ananás.</p>
+                        <span class="preco">12,25€</span>
+                    </div>
+                </div>
+
+                <div class="cartao-produto" data-categoria="vegan">
+                    <img src="https://tb-static.uber.com/prod/image-proc/processed_images/867326e5666da0286e02908cb744b7e1/d03e52b3c8af19d8fa8222e23efd9cfa.jpeg"
+                        alt="Vega" class="produto-img">
+                    <div class="produto-info">
+                        <h3>Vega</h3>
+                        <p>Hambúrguer frito de grão-de-bico, cenoura, pimento vermelho, manteiga de amendoim, paprika,
+                            cogumelos e sumo de limão.</p>
+                        <span class="preco">12,25€</span>
+                    </div>
+                </div>
+
+                <!-- FIM DO VEGAN -->
 
             </div>
         </section>
