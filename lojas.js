@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
 
     // --- LÓGICA DO MENU HAMBÚRGUER (MOBILE) ---
-    const menuToggle = document.getElementById('menu-toggle');
+    const menuToggle = document.getElementById('menu-toggle') || document.getElementById('mobile-menu') || document.querySelector('.menu-toggle');
     const navMenu = document.querySelector('.navbar nav');
 
     if (menuToggle && navMenu) {
