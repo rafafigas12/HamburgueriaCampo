@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Hamburgueria do Campo</title>
+
+    <!-- Fontes e Ícones -->
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Poppins:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="icon" type="image/jpeg" href="fotos/logo.jpg">
+
+    <!-- Os teus ficheiros CSS -->
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 768px)">
+    <link rel="stylesheet" href="desktop.css" media="screen and (min-width: 769px)">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">
+            <h1><a href="index.html">Hamburgueria do Campo</a></h1>
+        </div>
+
+        <button class="menu-toggle" id="mobile-menu" aria-label="Abrir Menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="menu.html"><i class="fa-solid fa-utensils icone-menu"></i> Seleção do Campo</a></li>
+                <li><a href="delivery.html">Delivery & Takeaway</a></li>
+                <li><a href="lojas.html">As Nossas Lojas</a></li>
+                <li><a href="index.html#reservas">Reservas</a></li>
+            </ul>
+        </nav>
+
+        <div class="social-links">
+            <a href="https://www.instagram.com/hamburgueria.docampo/" target="_blank"><i
+                    class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/Portela.de.Sintra2022/?locale=pt_PT" target="_blank"
+                aria-label="Facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section com Imagem de Fundo salada_fundo.jpeg -->
+        <section id="hero" class="hero hero-lojas">
+            <div class="hero-bg slide active" style="background-image: url('fotos/salada_fundo.jpeg');"></div>
+
+            <div class="hero-content">
+                <h2>A Nossa Seleção do Campo</h2>
+                <p>Os teus hambúrgueres artesanais favoritos feitos com ingredientes frescos!</p>
+            </div>
+        </section>
+
+        <!-- Secção Seleção do Campo -->
+        <section class="menu-section">
+            <!-- Botões de Filtro -->
+            <div class="filtros-menu">
+                <button class="btn-filtro ativo" data-filtro="todos">Todos</button>
+                <button class="btn-filtro" data-filtro="hamburgueres">Hambúrgueres</button>
+                <button class="btn-filtro" data-filtro="peixe">Peixe</button>
+            </div>
+
+            <!-- Grelha de Produtos -->
+            <div class="grelha-menu">
+
+                <!-- 1. Natura -->
+                <div class="cartao-produto" data-categoria="hamburgueres">
+                    <img src="https://tb-static.uber.com/prod/image-proc/processed_images/6a2492dfbcc66c81e3292fd325b3275f/d03e52b3c8af19d8fa8222e23efd9cfa.jpeg"
+                        alt="Hambúrguer Natura" class="produto-img">
+                    <div class="produto-info">
+                        <h3>Hambúrguer Natura</h3>
+                        <p>Hambúrguer de angus, sal, pimenta negra do reino, rúcula, tomate seco e vinagre balsâmico.
+                        </p>
+                        <span class="preco">12,25€</span>
+                    </div>
+                </div>
+
+                <!-- 2. Do Campo (Popular) -->
+                <div class="cartao-produto" data-categoria="hamburgueres">
+                    <img src="https://tb-static.uber.com/prod/image-proc/processed_images/7efa43c8cd6dfdb23240305714c6abdc/d03e52b3c8af19d8fa8222e23efd9cfa.jpeg"
+                        alt="Hambúrguer do Campo" class="produto-img">
+                    <div class="produto-info">
+                        <span class="tag-popular">Popular</span>
+                        <h3>Hambúrguer do Campo</h3>
+                        <p>Hambúrguer de angus, rúcula, cebola caramelizada, cogumelos frescos, mozzarella e pepperoni.
+                        </p>
+                        <span class="preco">14,05€</span>
+                    </div>
+                </div>
+
+                <!-- 3. Ibérico (Popular) -->
+                <div class="cartao-produto" data-categoria="hamburgueres">
+                    <img src="https://tb-static.uber.com/prod/image-proc/processed_images/84567029e066f21609f78ce9dbcd578d/d03e52b3c8af19d8fa8222e23efd9cfa.jpeg"
+                        alt="Hambúrguer Ibérico" class="produto-img">
+                    <div class="produto-info">
+                        <span class="tag-popular">Popular</span>
+                        <h3>Hambúrguer Ibérico</h3>
+                        <p>Hambúrguer de angus, rúcula, tomate seco, cebola caramelizada, queijo da Serra, presunto e
+                            ovo estrelado.</p>
+                        <span class="preco">14,30€</span>
+                    </div>
+                </div>
+
+                <!-- 4. Sintra Vila -->
+                <div class="cartao-produto" data-categoria="hamburgueres">
+                    <img src="https://tb-static.uber.com/prod/image-proc/processed_images/3718c7b5ce909bfa2eb075adcf9aee7f/d03e52b3c8af19d8fa8222e23efd9cfa.jpeg"
+                        alt="Hambúrguer Sintra Vila" class="produto-img">
+                    <div class="produto-info">
+                        <h3>Hambúrguer Sintra Vila</h3>
+                        <p>Hambúrguer de angus, queijo da cabra, aros de cebola, doce de abóbora, laranja, amêndoa,
+                            canela e mirtilo.</p>
+                        <span class="preco">14,70€</span>
+                    </div>
+                </div>
+
+                <!-- 5. Gladiador (Popular) -->
+                <div class="cartao-produto" data-categoria="hamburgueres">
+                    <img src="https://tb-static.uber.com/prod/image-proc/processed_images/b58db725be315277a28d5cc6fde736c6/d03e52b3c8af19d8fa8222e23efd9cfa.jpeg"
+                        alt="Hambúrguer Gladiador" class="produto-img">
+                    <div class="produto-info">
+                        <span class="tag-popular">Popular</span>
+                        <h3>Hambúrguer Gladiador</h3>
+                        <p>Hambúrguer de angus, rúcula, alface, tomate fresco, cebola caramelizada, azeitonas, cogumelos
+                            frescos, queijo cheddar, bacon e ovo estrelado.</p>
+                        <span class="preco">14,70€</span>
+                    </div>
+                </div>
+
+                <!-- 6. Invictus -->
+                <div class="cartao-produto" data-categoria="hamburgueres">
+                    <img src="https://tb-static.uber.com/prod/image-proc/processed_images/aad72b04d77786928659719d796111fd/d03e52b3c8af19d8fa8222e23efd9cfa.jpeg"
+                        alt="Hambúrguer Invictus" class="produto-img">
+                    <div class="produto-info">
+                        <h3>Hambúrguer Invictus</h3>
+                        <p>Hambúrguer de angus, queijo flamengo, fiambre, linguiça, bacon, ovo estrelado e molho de
+                            francesinha.</p>
+                        <span class="preco">15,10€</span>
+                    </div>
+                </div>
+
+                <!-- 7. Texas -->
+                <div class="cartao-produto" data-categoria="hamburgueres">
+                    <img src="https://tb-static.uber.com/prod/image-proc/processed_images/4a2f23d387b5b8f9c7ed6298cb788a19/d03e52b3c8af19d8fa8222e23efd9cfa.jpeg"
+                        alt="Hambúrguer Texas" class="produto-img">
+                    <div class="produto-info">
+                        <h3>Hambúrguer Texas</h3>
+                        <p>Hambúrguer de angus, alface, cornichons, queijo cheddar, bacon, tomate e cebola roxa.</p>
+                        <span class="preco">14,85€</span>
+                    </div>
+                </div>
+
+                <!-- 8. Smash Burger -->
+                <div class="cartao-produto" data-categoria="hamburgueres">
+                    <img src="https://tb-static.uber.com/prod/image-proc/processed_images/c93520e1cbbb251a65d6186ae8cc14ad/d03e52b3c8af19d8fa8222e23efd9cfa.jpeg"
+                        alt="Smash Burger" class="produto-img">
+                    <div class="produto-info">
+                        <h3>Smash Burger</h3>
+                        <p>2 hambúrgueres de angus, alface, cornichons, cebola roxa, bacon e queijo cheddar.</p>
+                        <span class="preco">16,80€</span>
+                    </div>
+                </div>
+
+                <!-- 9. Angus da Serra -->
+                <div class="cartao-produto" data-categoria="hamburgueres">
+                    <img src="https://tb-static.uber.com/prod/image-proc/processed_images/771c52235ab06ba1dbc86a44febfe04b/d03e52b3c8af19d8fa8222e23efd9cfa.jpeg"
+                        alt="Hambúrguer Angus da Serra" class="produto-img">
+                    <div class="produto-info">
+                        <h3>Hambúrguer Angus da Serra</h3>
+                        <p>Hambúrguer de angus, alface, tomate fresco, cebola roxa, queijo cheddar, bacon, cebola frita
+                            e ovo estrelado.</p>
+                        <span class="preco">14,70€</span>
+                    </div>
+                </div>
+
+                <!-- 10. Sem Asas (Frango) -->
+                <div class="cartao-produto" data-categoria="hamburgueres">
+                    <img src="https://tb-static.uber.com/prod/image-proc/processed_images/f7defe8aba826bd4c2e42ad5b566209e/d03e52b3c8af19d8fa8222e23efd9cfa.jpeg"
+                        alt="Hambúrguer sem Asas" class="produto-img">
+                    <div class="produto-info">
+                        <h3>Hambúrguer sem Asas</h3>
+                        <p>Peito de frango, rúcula, tomate seco, pepperoni, farinheira e queijo mozzarella.</p>
+                        <span class="preco">14,30€</span>
+                    </div>
+                </div>
+
+                <!-- 11. Sushíssimo (Peixe) -->
+                <div class="cartao-produto" data-categoria="peixe">
+                    <img src="https://tb-static.uber.com/prod/image-proc/processed_images/d7dabc324f39f5ae85a981ff0087a2f3/d03e52b3c8af19d8fa8222e23efd9cfa.jpeg"
+                        alt="Sushíssimo Burger" class="produto-img">
+                    <div class="produto-info">
+                        <h3>Sushíssimo Burger</h3>
+                        <p>Lombo de salmão, alface, queijo Filadélfia, cebola caramelizada e molho de soja.</p>
+                        <span class="preco">14,95€</span>
+                    </div>
+                </div>
+
+                <!-- 12. Oceano de Salmão (Peixe) -->
+                <div class="cartao-produto" data-categoria="peixe">
+                    <img src="https://tb-static.uber.com/prod/image-proc/processed_images/59d348aa1af8aed6ea0d13bf5b269468/d03e52b3c8af19d8fa8222e23efd9cfa.jpeg"
+                        alt="Hambúrguer Oceano de Salmão" class="produto-img">
+                    <div class="produto-info">
+                        <h3>Oceano de Salmão</h3>
+                        <p>Lombo de salmão, rúcula, tomate seco, alcaparras e vinagre balsâmico.</p>
+                        <span class="preco">14,95€</span>
+                    </div>
+                </div>
+
+                <!-- 13. Oceano de Atum (Peixe) -->
+                <div class="cartao-produto" data-categoria="peixe">
+                    <img src="https://tb-static.uber.com/prod/image-proc/processed_images/37c7450b42ca2280fbdea5c858e29b3a/d03e52b3c8af19d8fa8222e23efd9cfa.jpeg"
+                        alt="Hambúrguer Oceano de Atum" class="produto-img">
+                    <div class="produto-info">
+                        <h3>Oceano de Atum</h3>
+                        <p>Lombo de atum, rúcula, tomate seco, alcaparras e vinagre balsâmico.</p>
+                        <span class="preco">14,95€</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer style="background-color: #1A1A1A; color: #fff; text-align: center; padding: 30px;">
+        <p>&copy; 2026 Hamburgueria do Campo. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Importante: Importar o JavaScript para os filtros funcionarem! -->
+    <script src="lojas.js"></script>
+</body>
+
+</html>

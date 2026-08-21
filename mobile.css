@@ -280,29 +280,32 @@ body {
     text-shadow: 1px 2px 6px rgba(0, 0, 0, 0.7);
 }
 
-.btn-primary {
+.btn-primary,
+.btn-secondary {
     display: inline-block;
-    padding: 13px 26px;
+    padding: 10px 25px;
     background-color: #ffffff;
-    color: #111;
+    color: #1A1A1A;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 14px;
     border-radius: 30px;
-    border: 2px solid #ffcc00;
-    box-shadow: 0 4px 15px rgba(255, 204, 0, 0.25);
-    transition: all 0.25s ease;
+    border: 2px solid #1A1A1A;
+    transition: all 0.3s ease;
     cursor: pointer;
+    box-shadow: none;
 }
 
 .btn-primary:active,
-.btn-primary:hover {
-    background-color: #ffcc00;
-    color: #111;
-    border: 2px solid #ffcc00;
+.btn-primary:hover,
+.btn-secondary:active,
+.btn-secondary:hover {
+    background-color: #1A1A1A;
+    color: #FFCC00;
+    border-color: #1A1A1A;
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(255, 204, 0, 0.4);
+    box-shadow: none;
 }
 
 /* --- SECÇÃO DE CATEGORIAS DO MENU --- */
@@ -589,6 +592,141 @@ body {
 h2,
 h3 {
     font-family: 'Fredoka One', cursive;
+}
+
+/* --- SECÇÃO DO MENU (SELEÇÃO DO CAMPO) --- */
+
+.menu-section {
+    padding: 80px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section-titulo {
+    font-family: 'Chewy', cursive;
+    font-size: 48px;
+    color: #1A1A1A;
+    margin-bottom: 40px;
+}
+
+/* --- FILTROS --- */
+.filtros-menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* Permite que os botões passem para a linha de baixo se não couberem */
+    gap: 15px;
+    margin-bottom: 50px;
+}
+
+.btn-filtro {
+    background-color: transparent;
+    border: 2px solid #1A1A1A;
+    color: #1A1A1A;
+    padding: 10px 25px;
+    border-radius: 30px;
+    /* Dá aquele formato de "pílula" clássico */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-filtro:hover,
+.btn-filtro.ativo {
+    background-color: #1A1A1A;
+    color: #FFCC00;
+    /* Amarelo da marca para destacar o botão ativo */
+}
+
+/* --- GRELHA DE CARTÕES --- */
+.grelha-menu {
+    display: grid;
+    /* Cria as colunas automaticamente. Os cartões nunca ficam com menos de 280px de largura */
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.cartao-produto {
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.cartao-produto:hover {
+    transform: translateY(-5px);
+    /* Dá um pequeno salto ao passar o rato */
+}
+
+.produto-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.produto-info {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    flex-grow: 1;
+    /* Garante que os cartões têm todos a mesma altura independentemente do texto */
+}
+
+.produto-info h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    color: #1A1A1A;
+    margin-bottom: 10px;
+}
+
+.produto-info p {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    flex-grow: 1;
+    /* Empurra o preço para o fundo */
+}
+
+.preco {
+    font-size: 22px;
+    font-weight: bold;
+    color: #B93425;
+    /* Aquele Vermelho Rústico / Ketchup que definimos no início */
+}
+
+/* Classe invisível que o JavaScript vai usar para filtrar */
+.esconder-produto {
+    display: none !important;
+}
+
+.produto-info {
+    position: relative;
+    /* Necessário para a etiqueta ficar colada no topo */
+    /* ... o resto do teu código da .produto-info mantém-se ... */
+}
+
+.tag-popular {
+    position: absolute;
+    top: -15px;
+    /* Sobe a etiqueta para o limite da imagem */
+    right: 20px;
+    background-color: #E5A93B;
+    /* Amarelo Mostarda */
+    color: #111;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 5px 12px;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* --- FOOTER --- */

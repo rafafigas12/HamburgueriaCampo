@@ -185,4 +185,36 @@ document.addEventListener('DOMContentLoaded', () => {
             textos[currentSlide].classList.add('active');
         }, 5000); // Muda a cada 5 segundos
     }
+
+    // --- LÓGICA DE FILTRAGEM DA SELEÇÃO DO CAMPO ---
+    const botoesFiltro = document.querySelectorAll('.btn-filtro');
+    const produtos = document.querySelectorAll('.cartao-produto');
+
+    if (botoesFiltro.length > 0 && produtos.length > 0) {
+        botoesFiltro.forEach(botao => {
+            botao.addEventListener('click', () => {
+
+                // 1. Remove a cor de fundo (classe ativo) de todos os botões
+                botoesFiltro.forEach(b => b.classList.remove('ativo'));
+
+                // 2. Adiciona a cor de fundo apenas ao botão que foi clicado
+                botao.classList.add('ativo');
+
+                // 3. Lê o valor que está no atributo "data-filtro" (ex: "vaca")
+                const filtroAtivo = botao.getAttribute('data-filtro');
+
+                // 4. Corre todos os cartões de produto
+                produtos.forEach(produto => {
+                    const categoriaProduto = produto.getAttribute('data-categoria');
+
+                    // Se clicarmos em "Todos" OU se a categoria do produto corresponder ao filtro
+                    if (filtroAtivo === 'todos' || categoriaProduto === filtroAtivo || (filtroAtivo === 'hamburgueres' && (categoriaProduto === 'vaca' || categoriaProduto === 'frango'))) {
+                        produto.classList.remove('esconder-produto'); // Mostra o produto
+                    } else {
+                        produto.classList.add('esconder-produto'); // Esconde o produto
+                    }
+                });
+            });
+        });
+    }
 });

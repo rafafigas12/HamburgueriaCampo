@@ -1,0 +1,206 @@
+[
+  {
+    "hamburguer": "Featured items",
+    "linkImagem": "https://tb-static.uber.com/prod/image-proc/processed_images/d34eec07f9a3496a63c72e675c41910b/ffd640b0f9bc72838f2ebbee501a5d4b.jpeg"
+  },
+  {
+    "hamburguer": "Featured items",
+    "linkImagem": "https://tb-static.uber.com/prod/image-proc/processed_images/d34eec07f9a3496a63c72e675c41910b/ffd640b0f9bc72838f2ebbee501a5d4b.jpeg"
+  },
+  {
+    "hamburguer": "#1 most liked",
+    "linkImagem": "https://tb-static.uber.com/prod/image-proc/processed_images/771c52235ab06ba1dbc86a44febfe04b/d03e52b3c8af19d8fa8222e23efd9cfa.jpeg"
+  },
+  {
+    "hamburguer": "#2 most liked",
+    "linkImagem": "https://tb-static.uber.com/prod/image-proc/processed_images/c93520e1cbbb251a65d6186ae8cc14ad/d03e52b3c8af19d8fa8222e23efd9cfa.jpeg"
+  },
+  {
+    "hamburguer": "#3 most liked",
+    "linkImagem": "https://tb-static.uber.com/prod/image-proc/processed_images/84567029e066f21609f78ce9dbcd578d/d03e52b3c8af19d8fa8222e23efd9cfa.jpeg"
+  },
+  {
+    "hamburguer": "Hambúrguer Texas",
+    "linkImagem": "https://tb-static.uber.com/prod/image-proc/processed_images/4a2f23d387b5b8f9c7ed6298cb788a19/d03e52b3c8af19d8fa8222e23efd9cfa.jpeg"
+  },
+  {
+    "hamburguer": "Hambúrguer Gladiador",
+    "linkImagem": "https://tb-static.uber.com/prod/image-proc/processed_images/b58db725be315277a28d5cc6fde736c6/d03e52b3c8af19d8fa8222e23efd9cfa.jpeg"
+  },
+  {
+    "hamburguer": "Hambúrguer Invictus",
+    "linkImagem": "https://tb-static.uber.com/prod/image-proc/processed_images/aad72b04d77786928659719d796111fd/d03e52b3c8af19d8fa8222e23efd9cfa.jpeg"
+  },
+  {
+    "hamburguer": "Salada de Serra e Mar",
+    "linkImagem": "https://tb-static.uber.com/prod/image-proc/processed_images/66dc7ac4e920209a3eb81b4f0cc1bd39/d03e52b3c8af19d8fa8222e23efd9cfa.jpeg"
+  },
+  {
+    "hamburguer": "Prego em Bolo do Caco",
+    "linkImagem": "https://tb-static.uber.com/prod/image-proc/processed_images/cec2916b9892ce6f8986b3cc921eeb51/d03e52b3c8af19d8fa8222e23efd9cfa.jpeg"
+  },
+  {
+    "hamburguer": "Hambúrguer Natura",
+    "linkImagem": "https://tb-static.uber.com/prod/image-proc/processed_images/6a2492dfbcc66c81e3292fd325b3275f/d03e52b3c8af19d8fa8222e23efd9cfa.jpeg"
+  },
+  {
+    "hamburguer": "Hambúrguer Angus com Natas e Cogumelos",
+    "linkImagem": "https://tb-static.uber.com/prod/image-proc/processed_images/9a0eced93d524fe9c3aad3799397276b/d03e52b3c8af19d8fa8222e23efd9cfa.jpeg"
+  },
+  {
+    "hamburguer": "Hambúrguer do Campo",
+    "linkImagem": "https://tb-static.uber.com/prod/image-proc/processed_images/7efa43c8cd6dfdb23240305714c6abdc/d03e52b3c8af19d8fa8222e23efd9cfa.jpeg"
+  },
+  {
+    "hamburguer": "Salada de Salmão",
+    "linkImagem": "https://tb-static.uber.com/prod/image-proc/processed_images/30117fde571b9cc0d32ddcf7ee0ad888/d03e52b3c8af19d8fa8222e23efd9cfa.jpeg"
+  },
+  {
+    "hamburguer": "Sushíssimo Burger",
+    "linkImagem": "https://tb-static.uber.com/prod/image-proc/processed_images/d7dabc324f39f5ae85a981ff0087a2f3/d03e52b3c8af19d8fa8222e23efd9cfa.jpeg"
+  },
+  {
+    "hamburguer": "Salada Primavera",
+    "linkImagem": "https://tb-static.uber.com/prod/image-proc/processed_images/0c56ed25457de9f8f55310bb918532e2/d03e52b3c8af19d8fa8222e23efd9cfa.jpeg"
+  },
+  {
+    "hamburguer": "Bife Angus da Vazia com Natas e Cogumelos",
+    "linkImagem": "https://tb-static.uber.com/prod/image-proc/processed_images/9251b94dfd012359b06170123fbfff7d/d03e52b3c8af19d8fa8222e23efd9cfa.jpeg"
+  },
+  {
+    "hamburguer": "Hambúrguer Angus Serra e Mar",
+    "linkImagem": "https://tb-static.uber.com/prod/image-proc/processed_images/1134e3daad37d6121e0b2178441d49d4/d03e52b3c8af19d8fa8222e23efd9cfa.jpeg"
+  },
+  {
+    "hamburguer": "Bolinha de Alheira (6 unidades)",
+    "linkImagem": "https://tb-static.uber.com/prod/image-proc/processed_images/4dba9501985c8b1e8b8b80b45553c578/d03e52b3c8af19d8fa8222e23efd9cfa.jpeg"
+  },
+  {
+    "hamburguer": "Chamuça (6 unidades)",
+    "linkImagem": "https://tb-static.uber.com/prod/image-proc/processed_images/a23110aa78f31bcb669842c9bbe30bdc/d03e52b3c8af19d8fa8222e23efd9cfa.jpeg"
+  },
+  {
+    "hamburguer": "Bolo do Caco com Manteiga de Alho",
+    "linkImagem": "https://tb-static.uber.com/prod/image-proc/processed_images/b65890165d96d403c6603d070ff49737/d03e52b3c8af19d8fa8222e23efd9cfa.jpeg"
+  },
+  {
+    "hamburguer": "Bolo do Caco com Mozzarella",
+    "linkImagem": "https://tb-static.uber.com/prod/image-proc/processed_images/4dde0f5f3b7ed08dee67d122fbf2fd64/d03e52b3c8af19d8fa8222e23efd9cfa.jpeg"
+  },
+  {
+    "hamburguer": "Bolo do Caco com Mozzarella e Pepperoni",
+    "linkImagem": "https://tb-static.uber.com/prod/image-proc/processed_images/11a6ff2d17d6f5746674de26d57a5965/d03e52b3c8af19d8fa8222e23efd9cfa.jpeg"
+  },
+  {
+    "hamburguer": "Bolo do Caco Vegetariano",
+    "linkImagem": "https://tb-static.uber.com/prod/image-proc/processed_images/c3c4a0e953162d664bb8c19d26802214/d03e52b3c8af19d8fa8222e23efd9cfa.jpeg"
+  },
+  {
+    "hamburguer": "Crispy Batata",
+    "linkImagem": "https://tb-static.uber.com/prod/image-proc/processed_images/85e669909656b8cb3bb85c9571dd8fef/d03e52b3c8af19d8fa8222e23efd9cfa.jpeg"
+  },
+  {
+    "hamburguer": "Hambúrguer Natura",
+    "linkImagem": "https://tb-static.uber.com/prod/image-proc/processed_images/6a2492dfbcc66c81e3292fd325b3275f/d03e52b3c8af19d8fa8222e23efd9cfa.jpeg"
+  },
+  {
+    "hamburguer": "Hambúrguer do Campo",
+    "linkImagem": "https://tb-static.uber.com/prod/image-proc/processed_images/7efa43c8cd6dfdb23240305714c6abdc/d03e52b3c8af19d8fa8222e23efd9cfa.jpeg"
+  },
+  {
+    "hamburguer": "Hambúrguer Ibérico",
+    "linkImagem": "https://tb-static.uber.com/prod/image-proc/processed_images/84567029e066f21609f78ce9dbcd578d/d03e52b3c8af19d8fa8222e23efd9cfa.jpeg"
+  },
+  {
+    "hamburguer": "Hambúrguer Sintra Vila",
+    "linkImagem": "https://tb-static.uber.com/prod/image-proc/processed_images/3718c7b5ce909bfa2eb075adcf9aee7f/d03e52b3c8af19d8fa8222e23efd9cfa.jpeg"
+  },
+  {
+    "hamburguer": "Hambúrguer Gladiador",
+    "linkImagem": "https://tb-static.uber.com/prod/image-proc/processed_images/b58db725be315277a28d5cc6fde736c6/d03e52b3c8af19d8fa8222e23efd9cfa.jpeg"
+  },
+  {
+    "hamburguer": "Hambúrguer Invictus",
+    "linkImagem": "https://tb-static.uber.com/prod/image-proc/processed_images/aad72b04d77786928659719d796111fd/d03e52b3c8af19d8fa8222e23efd9cfa.jpeg"
+  },
+  {
+    "hamburguer": "Hambúrguer Texas",
+    "linkImagem": "https://tb-static.uber.com/prod/image-proc/processed_images/4a2f23d387b5b8f9c7ed6298cb788a19/d03e52b3c8af19d8fa8222e23efd9cfa.jpeg"
+  },
+  {
+    "hamburguer": "Smash Burger",
+    "linkImagem": "https://tb-static.uber.com/prod/image-proc/processed_images/c93520e1cbbb251a65d6186ae8cc14ad/d03e52b3c8af19d8fa8222e23efd9cfa.jpeg"
+  },
+  {
+    "hamburguer": "Hambúrguer Angus da Serra",
+    "linkImagem": "https://tb-static.uber.com/prod/image-proc/processed_images/771c52235ab06ba1dbc86a44febfe04b/d03e52b3c8af19d8fa8222e23efd9cfa.jpeg"
+  },
+  {
+    "hamburguer": "Hambúrguer sem Asas",
+    "linkImagem": "https://tb-static.uber.com/prod/image-proc/processed_images/f7defe8aba826bd4c2e42ad5b566209e/d03e52b3c8af19d8fa8222e23efd9cfa.jpeg"
+  },
+  {
+    "hamburguer": "Sushíssimo Burger",
+    "linkImagem": "https://tb-static.uber.com/prod/image-proc/processed_images/d7dabc324f39f5ae85a981ff0087a2f3/d03e52b3c8af19d8fa8222e23efd9cfa.jpeg"
+  },
+  {
+    "hamburguer": "Hambúrguer Oceano de Salmão",
+    "linkImagem": "https://tb-static.uber.com/prod/image-proc/processed_images/59d348aa1af8aed6ea0d13bf5b269468/d03e52b3c8af19d8fa8222e23efd9cfa.jpeg"
+  },
+  {
+    "hamburguer": "Hambúrguer Oceano de Atum",
+    "linkImagem": "https://tb-static.uber.com/prod/image-proc/processed_images/37c7450b42ca2280fbdea5c858e29b3a/d03e52b3c8af19d8fa8222e23efd9cfa.jpeg"
+  },
+  {
+    "hamburguer": "Hambúrguer Angus com Natas e Cogumelos",
+    "linkImagem": "https://tb-static.uber.com/prod/image-proc/processed_images/9a0eced93d524fe9c3aad3799397276b/d03e52b3c8af19d8fa8222e23efd9cfa.jpeg"
+  },
+  {
+    "hamburguer": "Hambúrguer Angus Serra e Mar",
+    "linkImagem": "https://tb-static.uber.com/prod/image-proc/processed_images/1134e3daad37d6121e0b2178441d49d4/d03e52b3c8af19d8fa8222e23efd9cfa.jpeg"
+  },
+  {
+    "hamburguer": "Bife Angus da Vazia com Pimenta",
+    "linkImagem": "https://tb-static.uber.com/prod/image-proc/processed_images/daeb1a7faba627c4c526bc3747767142/d03e52b3c8af19d8fa8222e23efd9cfa.jpeg"
+  },
+  {
+    "hamburguer": "Bife Angus da Vazia com Natas e Cogumelos",
+    "linkImagem": "https://tb-static.uber.com/prod/image-proc/processed_images/9251b94dfd012359b06170123fbfff7d/d03e52b3c8af19d8fa8222e23efd9cfa.jpeg"
+  },
+  {
+    "hamburguer": "Prego em Bolo do Caco",
+    "linkImagem": "https://tb-static.uber.com/prod/image-proc/processed_images/cec2916b9892ce6f8986b3cc921eeb51/d03e52b3c8af19d8fa8222e23efd9cfa.jpeg"
+  },
+  {
+    "hamburguer": "Salada de Salmão",
+    "linkImagem": "https://tb-static.uber.com/prod/image-proc/processed_images/30117fde571b9cc0d32ddcf7ee0ad888/d03e52b3c8af19d8fa8222e23efd9cfa.jpeg"
+  },
+  {
+    "hamburguer": "Salada de Atum",
+    "linkImagem": "https://tb-static.uber.com/prod/image-proc/processed_images/b921fb1d956c0c7df3bcc3e0287cce69/d03e52b3c8af19d8fa8222e23efd9cfa.jpeg"
+  },
+  {
+    "hamburguer": "Salada de Serra e Mar",
+    "linkImagem": "https://tb-static.uber.com/prod/image-proc/processed_images/66dc7ac4e920209a3eb81b4f0cc1bd39/d03e52b3c8af19d8fa8222e23efd9cfa.jpeg"
+  },
+  {
+    "hamburguer": "Salada Grega",
+    "linkImagem": "https://tb-static.uber.com/prod/image-proc/processed_images/34a23bfdcf4d226c9c4922f56b9699b2/d03e52b3c8af19d8fa8222e23efd9cfa.jpeg"
+  },
+  {
+    "hamburguer": "Salada Primavera",
+    "linkImagem": "https://tb-static.uber.com/prod/image-proc/processed_images/0c56ed25457de9f8f55310bb918532e2/d03e52b3c8af19d8fa8222e23efd9cfa.jpeg"
+  },
+  {
+    "hamburguer": "Verduxo",
+    "linkImagem": "https://tb-static.uber.com/prod/image-proc/processed_images/3eb32a6026bc202fe816e79ca48b9ef4/d03e52b3c8af19d8fa8222e23efd9cfa.jpeg"
+  },
+  {
+    "hamburguer": "Vega",
+    "linkImagem": "https://tb-static.uber.com/prod/image-proc/processed_images/867326e5666da0286e02908cb744b7e1/d03e52b3c8af19d8fa8222e23efd9cfa.jpeg"
+  },
+  {
+    "hamburguer": "Facebook",
+    "linkImagem": "https://www.ubereats.com/_static/97c43f8974e6c876.svg"
+  }
+]
